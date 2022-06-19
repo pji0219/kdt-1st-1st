@@ -1,0 +1,11 @@
+@import url('./css2.css');
+
+p {
+  color: white;
+  background-color: red;
+}
+
+h3 {
+  background-color: deepskyblue;
+  color: white;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* a:hover {
+      font-size: 35px;
+    } */
+    a:active {
+      font-size: 35px;
+    }
+    input:focus {
+      background-color: orange;
+    }
+    div {
+      width: 200px;
+      height: 100px;
+      background-color: orange;
+    }
+    div:focus {
+      width: 300px;
+      height: 100px;
+      background-color: orange;
+    }
+    /* .animal > li:first-child {
+      background-color: skyblue;
+    }
+    .animal > li:last-child {
+      background-color: orange;
+    } */
+    .animal > *:nth-child(2n) {
+      background-color: orange;
+    }
+    .animal > *:nth-child(2n + 1) {
+      background-color: skyblue;
+    }
+  </style>
+  <body>
+    <a href="http://naver.com">네이버 바로가기</a>
+    <br />
+    <input type="text" />
+    <!-- tabindex: focus가 안되는 요소에 포커스를 적용 시키게 하는것 -->
+    <div tabindex="-1"></div>
+    <ol class="animal">
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+      <li>item4</li>
+      <li>item5</li>
+      <li>item6</li>
+      <li>item7</li>
+      <li>item8</li>
+      <li>item9</li>
+      <li class="test">item10</li>
+    </ol>
+    <div class="fruits">
+      <span>딸기</span>
+      <span>수박</span>
+      <div>오렌지</div>
+      <p>망고</p>
+      <h3>사과</h3>
+    </div>
+  </body>
+</html>
