@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        /* margin: 100px; */
+        background-color: skyblue;
+      }
+
+      .child {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        transition: 1s;
+      }
+
+      .child1:active {
+        transform: translate(120px, 0) rotate(45deg);
+      }
+      .child2:active {
+        transform: translate(100px, 0) scaleX(2);
+      }
+
+      .child3:active {
+        transform: rotate(180deg);
+      }
+
+      .child4:active {
+        transform: skewX(-45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="child1 child"></div>
+    </div>
+    <br />
+    <div>
+      <div class="child2 child"></div>
+    </div>
+    <br />
+    <div>
+      <div class="child3 child"></div>
+    </div>
+    <br />
+    <div>
+      <div class="child4 child"></div>
+    </div>
+  </body>
+</html>
