@@ -1,0 +1,37 @@
+.circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: orange;
+  left: 0%;
+  top: 0%;
+  animation: test ease 10s infinite;
+}
+
+@keyframes test {
+  0% {
+    left: 0%;
+    top: 0%;
+  }
+
+  25% {
+    left: 90%;
+    top: 0%;
+  }
+
+  50% {
+    left: 90%;
+    top: 90%;
+  }
+
+  75% {
+    left: 0%;
+    top: 90%;
+  }
+
+  100% {
+    left: 0%;
+    top: 0%;
+  }
+}
